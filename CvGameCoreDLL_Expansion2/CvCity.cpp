@@ -1,5 +1,5 @@
 /*	-------------------------------------------------------------------------------------------------------
-	© 1991-2012 Take-Two Interactive Software and its subsidiaries.  Developed by Firaxis Games.  
+	Â© 1991-2012 Take-Two Interactive Software and its subsidiaries.  Developed by Firaxis Games.  
 	Sid Meier's Civilization V, Civ, Civilization, 2K Games, Firaxis Games, Take-Two Interactive Software 
 	and their respective logos are all trademarks of Take-Two interactive Software, Inc.  
 	All other marks and trademarks are the property of their respective owners.  
@@ -11213,10 +11213,10 @@ int CvCity::getExtraSpecialistYield(YieldTypes eIndex, SpecialistTypes eSpeciali
 	CvAssertMsg(eSpecialist >= 0, "eSpecialist expected to be >= 0");
 	CvAssertMsg(eSpecialist < GC.getNumSpecialistInfos(), "GC.getNumSpecialistInfos expected to be >= 0");
 
-	if (eSpecialist == GC.getDEFAULT_SPECIALIST())
-	{
-		return 0;
-	}
+	//if (eSpecialist == GC.getDEFAULT_SPECIALIST())
+	//{
+	//	return 0;
+	//}
 
 	int iYieldMultiplier = GET_PLAYER(getOwner()).getSpecialistExtraYield(eSpecialist, eIndex) +
 	                       GET_PLAYER(getOwner()).getSpecialistExtraYield(eIndex) +
